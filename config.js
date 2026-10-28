@@ -10,7 +10,7 @@ window.APP_CONFIG = {
   DEFAULT_ADMIN_PASSWORD: 'admin1234',
 
   // Google Apps Script Web App URL (บันทึกใน LocalStorage หรือระบุค่าเริ่มต้น)
-  GAS_WEBAPP_URL: localStorage.getItem('TRAFFIC_GAS_URL') || ''
+  GAS_WEBAPP_URL: localStorage.getItem('TRAFFIC_GAS_URL') || 'https://script.google.com/macros/s/AKfycbwJGT0KStVWcUq0VRi7lR0tyQl5bL7Ao7Izngtf8gGnC-LOAmoL185F1E5TRNsc6OU_gQ/exec'
 };
 
 // ข้อมูลตั้งต้นของเวรจราจร (แสดงผลได้ทันทีโดยไม่ต้องรอโหลด)
