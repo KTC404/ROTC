@@ -19,7 +19,7 @@ window.INITIAL_DUTY_DATA = {
     key: 'monday',
     name: 'วันจันทร์',
     sheetName: 'วันจันทร์',
-    maxTotal: 6,
+    maxTotal: 14,
     femaleQuota: 2,
     members: [
       { order: 1, name: 'กานต์จณากร', gender: 'male', role: 'หัวหน้าเวร (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
@@ -30,7 +30,7 @@ window.INITIAL_DUTY_DATA = {
     key: 'tuesday',
     name: 'วันอังคาร',
     sheetName: 'วันอังคาร',
-    maxTotal: 9,
+    maxTotal: 16,
     femaleQuota: 2,
     members: [
       { order: 1, name: 'ตรีรัตน์', gender: 'male', role: 'หัวหน้าเวร (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
@@ -42,7 +42,7 @@ window.INITIAL_DUTY_DATA = {
     key: 'wednesday',
     name: 'วันพุธ',
     sheetName: 'วันพุธ',
-    maxTotal: 8,
+    maxTotal: 15,
     femaleQuota: 3,
     members: [
       { order: 1, name: 'จารุพงศ์', gender: 'male', role: 'หัวหน้าเวร (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
@@ -55,7 +55,7 @@ window.INITIAL_DUTY_DATA = {
     key: 'thursday',
     name: 'วันพฤหัสบดี',
     sheetName: 'วันพฤหัสบดี',
-    maxTotal: 9,
+    maxTotal: 16,
     femaleQuota: 2,
     members: [
       { order: 1, name: 'วิชญะ', gender: 'male', role: 'หัวหน้าเวร (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
@@ -69,7 +69,7 @@ window.INITIAL_DUTY_DATA = {
     key: 'friday',
     name: 'วันศุกร์',
     sheetName: 'วันศุกร์',
-    maxTotal: 8,
+    maxTotal: 15,
     femaleQuota: 2,
     members: [
       { order: 1, name: 'เลิศสุกฤษฎิ์', gender: 'male', role: 'หัวหน้าเวร (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
