@@ -1,0 +1,122 @@
+/* Custom Styling for Traffic Duty Registration */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Day Color Themes */
+.day-monday {
+  --day-color: #3b82f6;
+  --day-bg-light: #eff6ff;
+  --day-border: #bfdbfe;
+}
+
+.day-tuesday {
+  --day-color: #ec4899;
+  --day-bg-light: #fdf2f8;
+  --day-border: #fbcfe8;
+}
+
+.day-wednesday {
+  --day-color: #10b981;
+  --day-bg-light: #ecfdf5;
+  --day-border: #a7f3d0;
+}
+
+.day-thursday {
+  --day-color: #f97316;
+  --day-bg-light: #fff7ed;
+  --day-border: #fed7aa;
+}
+
+.day-friday {
+  --day-color: #06b6d4;
+  --day-bg-light: #ecfeff;
+  --day-border: #a5f3fc;
+}
+
+/* Custom Radio & Checkbox Cards */
+.day-radio-card {
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.day-radio-card:hover:not(.disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.08);
+}
+
+.day-radio-card.selected {
+  border-color: #4f46e5 !important;
+  background-color: #eef2ff !important;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.3) !important;
+}
+
+.day-radio-card.disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  filter: grayscale(0.6);
+  background-color: #f8fafc;
+}
+
+.gender-card.selected-male {
+  border-color: #3b82f6 !important;
+  background-color: #eff6ff !important;
+}
+
+.gender-card.selected-female {
+  border-color: #ec4899 !important;
+  background-color: #fdf2f8 !important;
+}
+
+.gender-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #f1f5f9;
+  pointer-events: none;
+}
+
+/* Progress bar transitions */
+.progress-bar-fill {
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bg-slate-750 {
+  background-color: #243044;
+}
+
+.bg-slate-850 {
+  background-color: #172033;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
