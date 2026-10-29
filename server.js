@@ -18,11 +18,11 @@ app.use(express.static(__dirname));
 
 // Day Configurations
 const DAY_CONFIG = {
-  monday: { key: 'monday', name: 'วันจันทร์', sheetName: 'วันจันทร์', maxTotal: 14, femaleQuota: 2 },
-  tuesday: { key: 'tuesday', name: 'วันอังคาร', sheetName: 'วันอังคาร', maxTotal: 16, femaleQuota: 2 },
-  wednesday: { key: 'wednesday', name: 'วันพุธ', sheetName: 'วันพุธ', maxTotal: 15, femaleQuota: 3 },
-  thursday: { key: 'thursday', name: 'วันพฤหัสบดี', sheetName: 'วันพฤหัสบดี', maxTotal: 16, femaleQuota: 2 },
-  friday: { key: 'friday', name: 'วันศุกร์', sheetName: 'วันศุกร์', maxTotal: 15, femaleQuota: 2 }
+  monday: { key: 'monday', name: 'วันจันทร์', sheetName: 'วันจันทร์', maxTotal: 20, femaleQuota: 10 },
+  tuesday: { key: 'tuesday', name: 'วันอังคาร', sheetName: 'วันอังคาร', maxTotal: 20, femaleQuota: 10 },
+  wednesday: { key: 'wednesday', name: 'วันพุธ', sheetName: 'วันพุธ', maxTotal: 20, femaleQuota: 10 },
+  thursday: { key: 'thursday', name: 'วันพฤหัสบดี', sheetName: 'วันพฤหัสบดี', maxTotal: 20, femaleQuota: 10 },
+  friday: { key: 'friday', name: 'วันศุกร์', sheetName: 'วันศุกร์', maxTotal: 20, femaleQuota: 10 }
 };
 
 // Initialize Google Sheets Auth using credentials from "Text Document ใหม่.txt"
