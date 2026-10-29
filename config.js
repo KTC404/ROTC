@@ -19,8 +19,8 @@ window.INITIAL_DUTY_DATA = {
     key: 'monday',
     name: 'วันจันทร์',
     sheetName: 'วันจันทร์',
-    maxTotal: 14,
-    femaleQuota: 2,
+    maxTotal: 20,
+    femaleQuota: 10,
     members: [
       { order: 1, name: 'กานต์จณากร', gender: 'male', role: 'หัวหน้าเวร (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
       { order: 2, name: 'ชิษณุพงศ์ ซื่อตรง', gender: 'male', role: 'สมาชิก (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true }
@@ -30,8 +30,8 @@ window.INITIAL_DUTY_DATA = {
     key: 'tuesday',
     name: 'วันอังคาร',
     sheetName: 'วันอังคาร',
-    maxTotal: 16,
-    femaleQuota: 2,
+    maxTotal: 20,
+    femaleQuota: 10,
     members: [
       { order: 1, name: 'ตรีรัตน์', gender: 'male', role: 'หัวหน้าเวร (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
       { order: 2, name: 'ศศิกานต์ เกศศิริ', gender: 'female', role: 'สมาชิก (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
@@ -42,8 +42,8 @@ window.INITIAL_DUTY_DATA = {
     key: 'wednesday',
     name: 'วันพุธ',
     sheetName: 'วันพุธ',
-    maxTotal: 15,
-    femaleQuota: 3,
+    maxTotal: 20,
+    femaleQuota: 10,
     members: [
       { order: 1, name: 'จารุพงศ์', gender: 'male', role: 'หัวหน้าเวร (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
       { order: 2, name: 'คุณาลักษณ์ คล้ายนิ่ม', gender: 'male', role: 'สมาชิก (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
@@ -55,8 +55,8 @@ window.INITIAL_DUTY_DATA = {
     key: 'thursday',
     name: 'วันพฤหัสบดี',
     sheetName: 'วันพฤหัสบดี',
-    maxTotal: 16,
-    femaleQuota: 2,
+    maxTotal: 20,
+    femaleQuota: 10,
     members: [
       { order: 1, name: 'วิชญะ', gender: 'male', role: 'หัวหน้าเวร (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
       { order: 2, name: 'นายธีรพัชญ์ วุฒิวิชญานันต์', gender: 'male', role: 'สมาชิก (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
@@ -69,8 +69,8 @@ window.INITIAL_DUTY_DATA = {
     key: 'friday',
     name: 'วันศุกร์',
     sheetName: 'วันศุกร์',
-    maxTotal: 15,
-    femaleQuota: 2,
+    maxTotal: 20,
+    femaleQuota: 10,
     members: [
       { order: 1, name: 'เลิศสุกฤษฎิ์', gender: 'male', role: 'หัวหน้าเวร (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
       { order: 2, name: 'กัญญาภัค โพธิ์ทอง', gender: 'female', role: 'สมาชิก (ล็อค)', phone: '-', time: 'กำหนดล่วงหน้า', isLocked: true },
