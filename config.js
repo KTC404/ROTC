@@ -13,6 +13,9 @@ window.APP_CONFIG = {
   GAS_WEBAPP_URL: localStorage.getItem('TRAFFIC_GAS_URL') || 'https://script.google.com/macros/s/AKfycbwJGT0KStVWcUq0VRi7lR0tyQl5bL7Ao7Izngtf8gGnC-LOAmoL185F1E5TRNsc6OU_gQ/exec'
 };
 
+// โควต้ามาตรฐานของทุกวัน (บังคับใช้เสมอ แม้ backend จะส่งค่าเก่ามา)
+window.DUTY_LIMITS = { maxTotal: 20, femaleQuota: 10 };
+
 // ข้อมูลตั้งต้นของเวรจราจร (แสดงผลได้ทันทีโดยไม่ต้องรอโหลด)
 window.INITIAL_DUTY_DATA = {
   monday: {
@@ -321,3 +324,30 @@ window.ApiClient = {
     return { success: true, message: 'ลบรายชื่อเรียบร้อยแล้ว', data: window.loadLocalDutyData() };
   }
 };
+
+// บังคับใช้ DUTY_LIMITS กับข้อมูลที่ได้จาก backend ทุกครั้ง แล้วคำนวณ stats ใหม่
+window.normalizeDutyData = function(data) {
+  if (!data || typeof data !== 'object') return data;
+  const fixed = {};
+  for (const key in data) {
+    fixed[key] = {
+      ...data[key],
+      maxTotal: window.DUTY_LIMITS.maxTotal,
+      femaleQuota: window.DUTY_LIMITS.femaleQuota
+    };
+  }
+  return window.calculateDutyStats(fixed);
+};
+
+(function wrapApiClient() {
+  const api = window.ApiClient;
+  Object.keys(api).forEach(function(name) {
+    const original = api[name];
+    if (typeof original !== 'function') return;
+    api[name] = async function() {
+      const res = await original.apply(api, arguments);
+      if (res && res.data) res.data = window.normalizeDutyData(res.data);
+      return res;
+    };
+  });
+})();
